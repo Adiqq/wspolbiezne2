@@ -1,0 +1,3 @@
+/home/adiq/c/laby/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/adiq/c/laby/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/adiq/c/laby/cmake-build-debug/CMakeFiles/laby.dir

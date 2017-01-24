@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/laby.dir/zadanie3-129027-serwer.c.o  -o laby 

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/adiq/c/laby/zadanie3-129027-serwer.c
+stdio.h
+-
+stdlib.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+string.h
+-
+unistd.h
+-
+
