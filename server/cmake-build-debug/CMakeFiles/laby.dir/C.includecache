@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adiq/c/laby/zadanie3-129027-serwer.c
+/home/adiq/c/server/zadanie3-129027-serwer.c
 stdio.h
 -
 stdlib.h

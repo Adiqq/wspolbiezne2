@@ -6,13 +6,12 @@
 #include <unistd.h>
 
 int main() {
-    char name[] = "/home/adiq/c/serverFifo";
+    char name[] = "/tmp/serverFifo";
     char buffer[512];
     int fd;
     int clientFd;
     if (mkfifo(name, S_IRUSR | S_IWUSR) == -1) {
         perror("fifo already exists");
-        //exit(1);
     }
     if ((fd = open(name, O_RDONLY)) == -1) {
         perror("error on opening server file");

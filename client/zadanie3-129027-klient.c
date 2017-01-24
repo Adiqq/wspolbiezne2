@@ -8,8 +8,8 @@
 
 int main(int argc, char** argv) {
     assert(argc > 1);
-    char serverName[] = "/home/adiq/c/serverFifo";
-    char clientName[] = "/home/adiq/c/clientFifo";
+    char serverName[] = "/tmp/serverFifo";
+    char clientName[] = "/tmp/clientFifo";
     char buffer[512];
     int fd;
     char input[256];
@@ -20,7 +20,6 @@ int main(int argc, char** argv) {
     }
     if (mkfifo(serverName, S_IRUSR | S_IWUSR) == -1) {
         puts("server fifo already exists");
-        //exit(1);
     }
     if ((fd = open(serverName, O_WRONLY)) == -1) {
         perror("error on opening server file");
@@ -29,7 +28,6 @@ int main(int argc, char** argv) {
     int clientFd;
     if (mkfifo(clientName, S_IRUSR | S_IWUSR) == -1) {
         puts("client fifo already exists");
-        //exit(1);
     }
     char command[512];
     command[0] = (char)strlen(clientName);
